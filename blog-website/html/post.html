@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Posts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <script src='main.js'></script> -->
+</head>
+<style>
+.flex-shell {
+    display: flex;
+    flex-direction: column;
+}
+.topics-shell {
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+}
+.topics {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    flex: 1;
+    background-color: #a2bce2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.post-shell {
+    border: 0px solid black;
+    flex: 5;
+    position: relative;
+    overflow: auto;
+}
+.post-shell .post {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: calc((100px + (var(--i) - 1) * 150px));
+    height: 220px;
+    width: 200px;
+    background-color: #ede1ca;
+    transition: 0.5s;
+    transform-origin: 50% 100%;
+    z-index: calc(100 - var(--i));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 800;
+}
+.post:hover {
+    cursor: pointer;
+    transform: rotate(-10deg) translate(-50px, -20px);
+    z-index: 100;
+}
+
+
+</style>
+
+<body>
+    <div class="flex-shell">
+        <div class="topics-shell">
+            <div class="topics">
+                Post Topic 1
+            </div>
+            <div class="post-shell">
+                <div class="post" style="--i:1">1</div>
+                <div class="post" style="--i:2">2</div>
+                <div class="post" style="--i:3">3</div>
+                <div class="post" style="--i:4">4</div>
+                <div class="post" style="--i:5">5</div>
+                <div class="post" style="--i:6">6</div>
+                <div class="post" style="--i:7">7</div>
+                <div class="post" style="--i:8">8</div>
+                <div class="post" style="--i:9">9</div>
+            </div>
+        </div>
+        <div class="topics-shell">
+            <div class="topics">
+                Post Topic 2
+            </div>
+            <div class="post-shell">
+                <div class="post" style="--i:1">1</div>
+                <div class="post" style="--i:2">2</div>
+                <div class="post" style="--i:3">3</div>
+                <div class="post" style="--i:4">4</div>
+                <div class="post" style="--i:5">5</div>
+                <div class="post" style="--i:6">6</div>
+                <div class="post" style="--i:7">7</div>
+                <div class="post" style="--i:8">8</div>
+                <div class="post" style="--i:9">9</div>
+            </div>
+        </div>
+        <div class="topics-shell">
+            <div class="topics">
+                Post Topic 3
+            </div>
+            <div class="post-shell">
+                <div class="post" style="--i:1">1</div>
+                <div class="post" style="--i:2">2</div>
+                <div class="post" style="--i:3">3</div>
+                <div class="post" style="--i:4">4</div>
+                <div class="post" style="--i:5">5</div>
+                <div class="post" style="--i:6">6</div>
+                <div class="post" style="--i:7">7</div>
+                <div class="post" style="--i:8">8</div>
+                <div class="post" style="--i:9">9</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,1 +1,1 @@
-# Some Front-end Designs for Practice or for Fun
+# Some front-end designs for practice or for fun
